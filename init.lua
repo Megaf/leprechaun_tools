@@ -1,8 +1,16 @@
 -- The most amazing green mod ever! By Megaf - http://megaf.info/ http://megaf.wordpress.com/
 
-minetest.register_tool("default:pick_diamond", {
-	description = "Diamond Pickaxe",
-	inventory_image = "default_tool_diamondpick.png",
+-- Registering The Amazinly Insanily Awesome and Brillian Leprechaun Crystal!
+
+minetest.register_craftitem("leprechaun:leprechaun_crystal", {
+	description = "The Amazing Leprechaun Crystal",
+	inventory_image = "leprechaun_crystal.png",
+})
+
+-- Registering Tools.
+minetest.register_tool("leprechaun:pick_leprechaun", {
+	description = "Leprechaun Pickaxe!",
+	inventory_image = "leprechaun_pick.png",
 	tool_capabilities = {
 		full_punch_interval = 0.9,
 		max_drop_level=3,
@@ -13,10 +21,10 @@ minetest.register_tool("default:pick_diamond", {
 	},
 })
 
-minetest.register_tool("default:shovel_diamond", {
-	description = "Diamond Shovel",
-	inventory_image = "default_tool_diamondshovel.png",
-	wield_image = "default_tool_diamondshovel.png^[transformR90",
+minetest.register_tool("leprechaun:shovel_leprechaun", {
+	description = "Leprechaun Shovel!",
+	inventory_image = "leprechaun_shovel.png",
+	wield_image = "leprechaun_shovel.png^[transformR90",
 	tool_capabilities = {
 		full_punch_interval = 1.0,
 		max_drop_level=1,
@@ -27,9 +35,9 @@ minetest.register_tool("default:shovel_diamond", {
 	},
 })
 
-minetest.register_tool("default:axe_diamond", {
-	description = "Diamond Axe",
-	inventory_image = "default_tool_diamondaxe.png",
+minetest.register_tool("leprechaun:axe_leprechaun", {
+	description = "Leprechaun Axe!",
+	inventory_image = "leprechaun_axe.png",
 	tool_capabilities = {
 		full_punch_interval = 0.9,
 		max_drop_level=1,
@@ -40,9 +48,9 @@ minetest.register_tool("default:axe_diamond", {
 	},
 })
 
-minetest.register_tool("default:sword_diamond", {
-	description = "Diamond Sword",
-	inventory_image = "default_tool_diamondsword.png",
+minetest.register_tool("leprechaun:sword_leprechaun", {
+	description = "Leprechaun Sword!",
+	inventory_image = "leprechaun_sword.png",
 	tool_capabilities = {
 		full_punch_interval = 0.7,
 		max_drop_level=1,
@@ -53,13 +61,57 @@ minetest.register_tool("default:sword_diamond", {
 	}
 })
 
-farming.register_hoe(":farming:hoe_diamond", {
-	description = "Diamond Hoe",
-	inventory_image = "farming_tool_diamondhoe.png",
-	max_uses = 2000,
+-- Registering Crafts
+
+minetest.register_craft({
+	output = 'default:fence_wood 2',
 	recipe = {
-		{"default:diamond", "default:diamond"},
-		{"", "group:stick"},
-		{"", "group:stick"},
+		{'group:stick', 'group:stick', 'group:stick'},
+		{'group:stick', 'group:stick', 'group:stick'},
+	}
+})
+
+minetest.register_craft({
+	output = 'default:pick_diamond',
+	recipe = {
+		{'default:diamond', 'default:diamond', 'default:diamond'},
+		{'', 'group:stick', ''},
+		{'', 'group:stick', ''},
+	}
+})
+
+minetest.register_craft({
+	output = 'default:shovel_diamond',
+	recipe = {
+		{'default:diamond'},
+		{'group:stick'},
+		{'group:stick'},
+	}
+})
+
+minetest.register_craft({
+	output = 'default:axe_diamond',
+	recipe = {
+		{'default:diamond', 'default:diamond'},
+		{'default:diamond', 'group:stick'},
+		{'', 'group:stick'},
+	}
+})
+
+minetest.register_craft({
+	output = 'default:axe_diamond',
+	recipe = {
+		{'default:diamond', 'default:diamond'},
+		{'group:stick', 'default:diamond'},
+		{'group:stick', ''},
+	}
+})
+
+minetest.register_craft({
+	output = 'default:sword_diamond',
+	recipe = {
+		{'default:diamond'},
+		{'default:diamond'},
+		{'group:stick'},
 	}
 })
