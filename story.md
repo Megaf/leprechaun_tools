@@ -1,5 +1,5 @@
 #### Leprechaun Tools Story
-By Megaf
+#####By Megaf
 Leprechauns are actually miners! I manage to find their secret place where unfortunetaly I couldn't find any pot of gold.
 Instead, I found a strange kind of crystal, it was green and shiny. These Leprechauns are actually masters of crafting and smelting and they have figured out a way to create a new material from the mix of Mese and Diamond, two of the most durable materials on the Voxel world.
 They arrange Mese and Diamond in a very specific way in order to make what they call Leprechaun Crystal!
