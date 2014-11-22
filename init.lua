@@ -67,7 +67,7 @@ minetest.register_craft({
 	output = 'leprechaun_tools:leprechaun_crystal',
 	recipe = {
 		{'default:mese_crystal', 'default:diamond', 'default:mese_crystal'},
-		{'default:diamond', 'default:diamond', 'default:diamond'},
+		{'default:diamond', 'default:mese_crystal', 'default:diamond'},
 	}
 })
 
