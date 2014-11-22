@@ -64,53 +64,53 @@ minetest.register_tool("leprechaun:sword_leprechaun", {
 -- Registering Crafts
 
 minetest.register_craft({
-	output = 'default:fence_wood 2',
+	output = 'leprechaun:leprechaun_crystal',
 	recipe = {
-		{'group:stick', 'group:stick', 'group:stick'},
-		{'group:stick', 'group:stick', 'group:stick'},
-	}
-})
-
-minetest.register_craft({
-	output = 'default:pick_diamond',
-	recipe = {
+		{'default:mese', 'default:diamond', 'default:mese'},
 		{'default:diamond', 'default:diamond', 'default:diamond'},
+	}
+})
+
+minetest.register_craft({
+	output = 'default:pick_leprechaun',
+	recipe = {
+		{'leprechaun:leprechaun_crystal', 'leprechaun:leprechaun_crystal', 'leprechaun:leprechaun_crystal'},
 		{'', 'group:stick', ''},
 		{'', 'group:stick', ''},
 	}
 })
 
 minetest.register_craft({
-	output = 'default:shovel_diamond',
+	output = 'default:shovel_leprechaun',
 	recipe = {
-		{'default:diamond'},
+		{'leprechaun:leprechaun_crystal'},
 		{'group:stick'},
 		{'group:stick'},
 	}
 })
 
 minetest.register_craft({
-	output = 'default:axe_diamond',
+	output = 'default:axe_leprechaun',
 	recipe = {
-		{'default:diamond', 'default:diamond'},
-		{'default:diamond', 'group:stick'},
+		{'leprechaun:leprechaun_crystal', 'leprechaun:leprechaun_crystal'},
+		{'leprechaun:leprechaun_crystal', 'group:stick'},
 		{'', 'group:stick'},
 	}
 })
 
 minetest.register_craft({
-	output = 'default:axe_diamond',
+	output = 'default:axe_leprechaun',
 	recipe = {
-		{'default:diamond', 'default:diamond'},
-		{'group:stick', 'default:diamond'},
+		{'leprechaun:leprechaun_crystal', 'leprechaun:leprechaun_crystal'},
+		{'group:stick', 'leprechaun:leprechaun_crystal'},
 		{'group:stick', ''},
 	}
 })
 
 minetest.register_craft({
-	output = 'default:sword_diamond',
+	output = 'default:sword_leprechaun',
 	recipe = {
-		{'default:diamond'},
+		{'leprechaun:leprechaun_crystal'},
 		{'default:diamond'},
 		{'group:stick'},
 	}
