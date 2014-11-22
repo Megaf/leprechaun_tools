@@ -2,13 +2,13 @@
 
 -- Registering The Amazinly Insanily Awesome and Brillian Leprechaun Crystal!
 
-minetest.register_craftitem("leprechaun:leprechaun_crystal", {
+minetest.register_craftitem("leprechaun_tools:leprechaun_crystal", {
 	description = "The Amazing Leprechaun Crystal",
 	inventory_image = "leprechaun_crystal.png",
 })
 
 -- Registering Tools.
-minetest.register_tool("leprechaun:pick_leprechaun", {
+minetest.register_tool("leprechaun_tools:pick_leprechaun", {
 	description = "Leprechaun Pickaxe!",
 	inventory_image = "leprechaun_pick.png",
 	tool_capabilities = {
@@ -21,7 +21,7 @@ minetest.register_tool("leprechaun:pick_leprechaun", {
 	},
 })
 
-minetest.register_tool("leprechaun:shovel_leprechaun", {
+minetest.register_tool("leprechaun_tools:shovel_leprechaun", {
 	description = "Leprechaun Shovel!",
 	inventory_image = "leprechaun_shovel.png",
 	wield_image = "leprechaun_shovel.png^[transformR90",
@@ -35,7 +35,7 @@ minetest.register_tool("leprechaun:shovel_leprechaun", {
 	},
 })
 
-minetest.register_tool("leprechaun:axe_leprechaun", {
+minetest.register_tool("leprechaun_tools:axe_leprechaun", {
 	description = "Leprechaun Axe!",
 	inventory_image = "leprechaun_axe.png",
 	tool_capabilities = {
@@ -48,7 +48,7 @@ minetest.register_tool("leprechaun:axe_leprechaun", {
 	},
 })
 
-minetest.register_tool("leprechaun:sword_leprechaun", {
+minetest.register_tool("leprechaun_tools:sword_leprechaun", {
 	description = "Leprechaun Sword!",
 	inventory_image = "leprechaun_sword.png",
 	tool_capabilities = {
@@ -64,7 +64,7 @@ minetest.register_tool("leprechaun:sword_leprechaun", {
 -- Registering Crafts
 
 minetest.register_craft({
-	output = 'leprechaun:leprechaun_crystal',
+	output = 'leprechaun_tools:leprechaun_crystal',
 	recipe = {
 		{'default:mese', 'default:diamond', 'default:mese'},
 		{'default:diamond', 'default:diamond', 'default:diamond'},
@@ -72,49 +72,49 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = 'leprechaun:pick_leprechaun',
+	output = 'leprechaun_tools:pick_leprechaun',
 	recipe = {
-		{'leprechaun:leprechaun_crystal', 'leprechaun:leprechaun_crystal', 'leprechaun:leprechaun_crystal'},
+		{'leprechaun_tools:leprechaun_crystal', 'leprechaun_tools:leprechaun_crystal', 'leprechaun_tools:leprechaun_crystal'},
 		{'', 'group:stick', ''},
 		{'', 'group:stick', ''},
 	}
 })
 
 minetest.register_craft({
-	output = 'leprechaun:shovel_leprechaun',
+	output = 'leprechaun_tools:shovel_leprechaun',
 	recipe = {
-		{'leprechaun:leprechaun_crystal'},
+		{'leprechaun_tools:leprechaun_crystal'},
 		{'group:stick'},
 		{'group:stick'},
 	}
 })
 
 minetest.register_craft({
-	output = 'leprechaun:axe_leprechaun',
+	output = 'leprechaun_tools:axe_leprechaun',
 	recipe = {
-		{'leprechaun:leprechaun_crystal', 'leprechaun:leprechaun_crystal'},
-		{'leprechaun:leprechaun_crystal', 'group:stick'},
+		{'leprechaun_tools:leprechaun_crystal', 'leprechaun_tools:leprechaun_crystal'},
+		{'leprechaun_tools:leprechaun_crystal', 'group:stick'},
 		{'', 'group:stick'},
 	}
 })
 
 minetest.register_craft({
-	output = 'leprechaun:axe_leprechaun',
+	output = 'leprechaun_tools:axe_leprechaun',
 	recipe = {
-		{'leprechaun:leprechaun_crystal', 'leprechaun:leprechaun_crystal'},
-		{'group:stick', 'leprechaun:leprechaun_crystal'},
+		{'leprechaun_tools:leprechaun_crystal', 'leprechaun_tools:leprechaun_crystal'},
+		{'group:stick', 'leprechaun_tools:leprechaun_crystal'},
 		{'group:stick', ''},
 	}
 })
 
 minetest.register_craft({
-	output = 'leprechaun:sword_leprechaun',
+	output = 'leprechaun_tools:sword_leprechaun',
 	recipe = {
-		{'leprechaun:leprechaun_crystal'},
-		{'leprechaun:leprechaun_crystal'},
+		{'leprechaun_tools:leprechaun_crystal'},
+		{'leprechaun_tools:leprechaun_crystal'},
 		{'group:stick'},
 	}
 })
 
-minetest.register_alias('leprechaun_crystal', 'leprechaun:leprechaun_crystal')
+minetest.register_alias('leprechaun_crystal', 'leprechaun_tools:leprechaun_crystal')
 print('[leprechaun] loaded.')
