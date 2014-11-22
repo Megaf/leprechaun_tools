@@ -72,7 +72,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = 'default:pick_leprechaun',
+	output = 'leprechaun:pick_leprechaun',
 	recipe = {
 		{'leprechaun:leprechaun_crystal', 'leprechaun:leprechaun_crystal', 'leprechaun:leprechaun_crystal'},
 		{'', 'group:stick', ''},
@@ -81,7 +81,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = 'default:shovel_leprechaun',
+	output = 'leprechaun:shovel_leprechaun',
 	recipe = {
 		{'leprechaun:leprechaun_crystal'},
 		{'group:stick'},
@@ -90,7 +90,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = 'default:axe_leprechaun',
+	output = 'leprechaun:axe_leprechaun',
 	recipe = {
 		{'leprechaun:leprechaun_crystal', 'leprechaun:leprechaun_crystal'},
 		{'leprechaun:leprechaun_crystal', 'group:stick'},
@@ -99,7 +99,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = 'default:axe_leprechaun',
+	output = 'leprechaun:axe_leprechaun',
 	recipe = {
 		{'leprechaun:leprechaun_crystal', 'leprechaun:leprechaun_crystal'},
 		{'group:stick', 'leprechaun:leprechaun_crystal'},
@@ -108,10 +108,13 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = 'default:sword_leprechaun',
+	output = 'leprechaun:sword_leprechaun',
 	recipe = {
 		{'leprechaun:leprechaun_crystal'},
-		{'default:diamond'},
+		{'leprechaun:leprechaun_crystal'},
 		{'group:stick'},
 	}
 })
+
+minetest.register_alias('leprechaun_crystal', 'leprechaun:leprechaun_crystal')
+print('[leprechaun] loaded.')
