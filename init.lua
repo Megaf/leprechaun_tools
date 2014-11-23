@@ -1,6 +1,6 @@
 -- The most amazing green mod ever! By Megaf - http://megaf.info/ http://megaf.wordpress.com/
 
--- Registering The Amazinly Insanily Awesome and Brillian Leprechaun Crystal!
+-- Registering The Amazinly Insanily Awesome and Brilliant Leprechaun Crystal!
 
 minetest.register_craftitem("leprechaun_tools:leprechaun_crystal", {
 	description = "The Amazing Leprechaun Crystal",
