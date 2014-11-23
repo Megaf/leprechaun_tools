@@ -15,7 +15,7 @@ minetest.register_tool("leprechaun_tools:pick_leprechaun", {
 		full_punch_interval = 0.9,
 		max_drop_level=3,
 		groupcaps={
-			cracky = {times={[1]=1.0, [2]=0.5, [3]=0.20}, uses=80, maxlevel=3},
+			cracky = {times={[1]=1.5, [2]=0.9, [3]=0.50}, uses=80, maxlevel=3},
 		},
 		damage_groups = {fleshy=5},
 	},
@@ -67,7 +67,7 @@ minetest.register_craft({
 	output = 'leprechaun_tools:leprechaun_crystal',
 	recipe = {
 		{'default:mese_crystal', 'default:diamond', 'default:mese_crystal'},
-		{'default:diamond', 'default:diamond', 'default:diamond'},
+		{'default:diamond', 'default:mese_crystal', 'default:diamond'},
 	}
 })
 
