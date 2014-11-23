@@ -117,4 +117,4 @@ minetest.register_craft({
 })
 
 minetest.register_alias('leprechaun_crystal', 'leprechaun_tools:leprechaun_crystal')
-print('[leprechaun] loaded.')
+print('[leprechaun_tools] loaded.')
