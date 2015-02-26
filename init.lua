@@ -115,6 +115,26 @@ minetest.register_craft({
 		{'group:stick'},
 	}
 })
+--[[
+minetest.register_craft({
+	output = 'leprechaun_tools:leprechaun_block',
+	recipe = {
+		{'leprechaun_tools:leprechaun_crystal'},
+		{'leprechaun_tools:leprechaun_crystal'},
+		{'leprechaun_tools:leprechaun_crystal'},
+	}
+})
 
+minetest.register_node("leprechaun_tools:leprechaun_block",{
+  	description = "A block of happiness.",
+	sunlight_propagates = true,
+--	visual_scale = 1.0,
+	tiles = {"leprechaun_block.png"},
+	groups = {oddly_breakable_by_hand=1,attached_node=1},
+	paramtype = "light",
+--	on_use = minetest.item_eat(+50),
+	})
+
+minetest.register_alias('leprechaun_block', 'leprechaun_tools:leprechaun_block')]]
 minetest.register_alias('leprechaun_crystal', 'leprechaun_tools:leprechaun_crystal')
 print('[leprechaun_tools] loaded.')
