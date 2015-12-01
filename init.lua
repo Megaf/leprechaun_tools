@@ -31,7 +31,7 @@ minetest.register_tool("leprechaun_tools:shovel_leprechaun", {
 		max_drop_level=1,
 		groupcaps={
 			crumbly = {times={[1]=0.5, [2]=0.25, [3]=0.10}, uses=300, maxlevel=3},
-			nether = {times={[1]=0.5, [2]=0.25, [3]=0.10}, uses=300, maxlevel=3},
+			nether	= {times={[1]=0.5, [2]=0.25, [3]=0.10}, uses=300, maxlevel=3},
 		},
 		damage_groups = {fleshy=4},
 	},
@@ -44,7 +44,7 @@ minetest.register_tool("leprechaun_tools:axe_leprechaun", {
 		full_punch_interval = 0.9,
 		max_drop_level=1,
 		groupcaps={
-			choppy = {{times={[1]=0.5, [2]=0.25, [3]=0.10}, uses=300, maxlevel=3},
+			choppy = {times={[1]=0.5, [2]=0.25, [3]=0.10}, uses=300, maxlevel=3},
 			nether = {times={[1]=0.5, [2]=0.25, [3]=0.10}, uses=300, maxlevel=3},
 		},
 		damage_groups = {fleshy=7},
