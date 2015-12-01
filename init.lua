@@ -15,7 +15,8 @@ minetest.register_tool("leprechaun_tools:pick_leprechaun", {
 		full_punch_interval = 0.9,
 		max_drop_level=3,
 		groupcaps={
-			cracky = {times={[1]=1.5, [2]=0.9, [3]=0.50}, uses=80, maxlevel=3},
+			cracky = {times={[1]=0.5, [2]=0.25, [3]=0.10}, uses=300, maxlevel=3},
+			nether = {times={[1]=0.5, [2]=0.25, [3]=0.10}, uses=300, maxlevel=3},
 		},
 		damage_groups = {fleshy=5},
 	},
@@ -29,7 +30,8 @@ minetest.register_tool("leprechaun_tools:shovel_leprechaun", {
 		full_punch_interval = 1.0,
 		max_drop_level=1,
 		groupcaps={
-			crumbly = {times={[1]=0.8, [2]=0.30, [3]=0.10}, uses=80, maxlevel=3},
+			crumbly = {times={[1]=0.5, [2]=0.25, [3]=0.10}, uses=300, maxlevel=3},
+			nether = {times={[1]=0.5, [2]=0.25, [3]=0.10}, uses=300, maxlevel=3},
 		},
 		damage_groups = {fleshy=4},
 	},
@@ -42,7 +44,8 @@ minetest.register_tool("leprechaun_tools:axe_leprechaun", {
 		full_punch_interval = 0.9,
 		max_drop_level=1,
 		groupcaps={
-			choppy={times={[1]=1.20, [2]=0.70, [3]=0.30}, uses=80, maxlevel=2},
+			choppy = {{times={[1]=0.5, [2]=0.25, [3]=0.10}, uses=300, maxlevel=3},
+			nether = {times={[1]=0.5, [2]=0.25, [3]=0.10}, uses=300, maxlevel=3},
 		},
 		damage_groups = {fleshy=7},
 	},
@@ -55,7 +58,8 @@ minetest.register_tool("leprechaun_tools:sword_leprechaun", {
 		full_punch_interval = 0.7,
 		max_drop_level=1,
 		groupcaps={
-			snappy={times={[1]=0.70, [2]=0.40, [3]=0.15}, uses=80, maxlevel=3},
+			snappy = {times={[1]=0.5, [2]=0.25, [3]=0.10}, uses=300, maxlevel=3},
+			nether = {times={[1]=0.5, [2]=0.25, [3]=0.10}, uses=300, maxlevel=3},
 		},
 		damage_groups = {fleshy=8},
 	}
