@@ -54,6 +54,7 @@ minetest.register_tool("leprechaun_tools:axe_leprechaun", {
 minetest.register_tool("leprechaun_tools:sword_leprechaun", {
 	description = "Leprechaun Sword!",
 	inventory_image = "leprechaun_sword.png",
+	wield_scale = {x=1.5, y=2, z=1},
 	tool_capabilities = {
 		full_punch_interval = 0.7,
 		max_drop_level=1,
